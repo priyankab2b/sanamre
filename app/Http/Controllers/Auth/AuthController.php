@@ -66,12 +66,10 @@ class AuthController extends Controller
             'password' => 'required|min:6',
             'phone' => 'required',
             'age' => 'required',
+            'gender' => 'required',
             'image1' => 'required',
             'image2' => 'required',
             'image3' => 'required',
-            'image4' => 'required',
-            'image5' => 'required',
-            'image6' => 'required',
 
         ]);
            
@@ -107,12 +105,10 @@ class AuthController extends Controller
         'email' => $data['email'],
         'phone' => $data['phone'],
         'age' => $data['age'],
+        'gender' => $data['gender'],
         'image1' => $data['image1'],
         'image2' => $data['image2'],
         'image3' => $data['image3'],
-        'image4' => $data['image4'],
-        'image5' => $data['image5'],
-        'image6' => $data['image6'],
         'password' => Hash::make($data['password'])
       ]);
     }

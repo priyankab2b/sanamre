@@ -82,6 +82,25 @@
                           </div>
 
                           <div class="form-group row">
+                              <label for="gender" class="col-md-4 col-form-label text-md-right">Gender</label>
+                              <div class="col-md-6">
+                                
+                              <div class="d-flex">
+                                <label for="gender" class="col-md-4 col-form-label text-md-right">Male</label>
+                                  <input type="radio" id="gender" value="male" class="form-control" name="gender" required autofocus>
+
+                                  <label for="gender" class="col-md-4 col-form-label text-md-right">Female</label>
+                                  <input type="radio" id="gender" value="female" class="form-control" name="gender" required autofocus>
+                                  @if ($errors->has('gender'))
+                                      <span class="text-danger">{{ $errors->first('gender') }}</span>
+                                  @endif
+                              </div>
+                                
+                              </div>
+                          </div>
+
+
+                          <!-- <div class="form-group row">
                               <label for="image4" class="col-md-4 col-form-label text-md-right">Images4</label>
                               <div class="col-md-6">
                                   <input type="file" id="image4" class="form-control" name="image4" required autofocus>
@@ -109,7 +128,7 @@
                                       <span class="text-danger">{{ $errors->first('image6') }}</span>
                                   @endif
                               </div>
-                          </div>
+                          </div> -->
   
                           <div class="form-group row">
                               <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
